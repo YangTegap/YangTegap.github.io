@@ -1,29 +1,27 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap");
 
 //COLORS
-$text: #1E212B;
-$background: #F2F4F3;
-$primary: #DDAB2C;
-$secondary: #C2B5AE;
-$accent: #5B8266;
+$text: #1e212b;
+$background: #f2f4f3;
+$primary: #ddab2c;
+$secondary: #c2b5ae;
+$accent: #5b8266;
 $light-shadow: rgba(0, 0, 0, 0.25);
-$shadow: rgba(0, 0, 0, 0.50);
-
+$shadow: rgba(0, 0, 0, 0.5);
 
 //STRUCTURE
 body {
     background-color: $background;
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    font-family: 'Marcellus', serif;
+    font-family: "Marcellus", serif;
     font-size: 1.2em;
 
     a {
@@ -76,7 +74,6 @@ header {
             background-color: $background;
             border-bottom: 1px solid $secondary;
 
-
             &.sticky {
                 position: fixed;
                 top: 0;
@@ -87,7 +84,6 @@ header {
             }
 
             &:not(.sticky) {
-
                 div#header-sticky-left *,
                 div#header-sticky-right * {
                     display: none;
@@ -145,13 +141,13 @@ main {
         text-align: center;
     }
 
-    section {
-        div.section-contents {
-            max-width: 1000px;
-            padding: 20px;
-            margin: 0 auto;
-        }
+    div.section-contents {
+        max-width: 1000px;
+        padding: 20px;
+        margin: 0 auto;
+    }
 
+    section {
         &.secondary {
             background-color: $secondary;
         }
@@ -161,6 +157,13 @@ main {
                 text-align: center;
             }
         }
+    }
+
+    img.about-image {
+        width: 300px;
+        border-radius: 50%;
+        float: left;
+        margin: 0 20px 20px 0;
     }
 }
 
@@ -180,7 +183,6 @@ footer {
         }
     }
 }
-
 
 //ELEMENTS
 
@@ -202,6 +204,14 @@ div.hero {
     }
 }
 
+div.svg-bullet {
+    display: flex;
+    align-items: center;
+    svg {
+        padding-right: 10px;
+    }
+}
+
 div.contact-form {
     background-color: $secondary;
     padding: 20px;
@@ -217,15 +227,10 @@ div.contact-form {
     }
 }
 
-div.content-tile-container {
+div.side-by-side {
     display: flex;
-    justify-content: space-between;
-
-    div.content-tile {
-        color: $background;
-        background-color: $accent;
-        padding: 10px 20px;
-        border-radius: 20px;
+    & > *:not(:last-child) {
+        margin-right: 20px;
     }
 }
 
@@ -247,8 +252,8 @@ button.action-button {
 }
 
 button,
-input[type=button],
-input[type=submit] {
+input[type="button"],
+input[type="submit"] {
     color: $text;
     font-weight: bold;
     text-decoration: none;
@@ -263,7 +268,7 @@ input[type=submit] {
     }
 }
 
-input[type=email] {
+input[type="email"] {
     padding: 11px;
     border: 1px solid $accent;
     width: 300px;

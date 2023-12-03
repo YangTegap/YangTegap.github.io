@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap");
 body {
-  background-color: #F2F4F3;
+  background-color: #f2f4f3;
   margin: 0;
   font-family: "Work Sans", sans-serif;
   display: flex;
@@ -15,7 +15,7 @@ header {
 header a {
   display: block;
   text-decoration: none;
-  color: #1E212B;
+  color: #1e212b;
 }
 header a:has(svg) {
   display: inline;
@@ -25,14 +25,14 @@ header svg.bi {
 }
 header svg.bi:hover {
   cursor: pointer;
-  background: #DDAB2C;
+  background: #ddab2c;
 }
 header div#page-header div#header-top {
   margin: 0 40px;
   padding: 20px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #1E212B;
+  border-bottom: 1px solid #1e212b;
 }
 header div#page-header div#header-top div#header-top-left {
   flex: 1;
@@ -50,8 +50,8 @@ header div#page-header div#header-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F2F4F3;
-  border-bottom: 1px solid #C2B5AE;
+  background-color: #f2f4f3;
+  border-bottom: 1px solid #c2b5ae;
 }
 header div#page-header div#header-bottom.sticky {
   position: fixed;
@@ -83,16 +83,16 @@ header div#page-header div#header-bottom nav ul li {
   margin: 0 20px;
 }
 header div#page-header div#header-bottom nav ul li.active {
-  background-color: #5B8266;
+  background-color: #5b8266;
 }
 header div#page-header div#header-bottom nav ul li.active a {
-  color: #F2F4F3;
+  color: #f2f4f3;
 }
 header div#page-header div#header-bottom nav ul li a {
   padding: 20px;
 }
 header div#page-header div#header-bottom nav ul li a:focus, header div#page-header div#header-bottom nav ul li a:hover {
-  background-color: #DDAB2C;
+  background-color: #ddab2c;
 }
 
 main {
@@ -104,22 +104,28 @@ main.sticky {
 main h1 {
   text-align: center;
 }
-main section div.section-contents {
+main div.section-contents {
   max-width: 1000px;
   padding: 20px;
   margin: 0 auto;
 }
 main section.secondary {
-  background-color: #C2B5AE;
+  background-color: #c2b5ae;
 }
 main section.center div.section-contents {
   text-align: center;
+}
+main img.about-image {
+  width: 300px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 footer {
   padding: 20px;
   text-align: center;
-  background-color: #C2B5AE;
+  background-color: #c2b5ae;
 }
 footer div#socials {
   padding: 20px;
@@ -128,11 +134,11 @@ footer div#socials a.social-button {
   text-decoration: none;
   display: inline;
   margin: 20px;
-  color: #1E212B;
+  color: #1e212b;
 }
 
 div.hero {
-  color: #F2F4F3;
+  color: #f2f4f3;
   position: relative;
   height: 500px;
   text-align: center;
@@ -148,8 +154,16 @@ div.hero div.hero-content {
   transform: translate(-50%, -50%);
 }
 
+div.svg-bullet {
+  display: flex;
+  align-items: center;
+}
+div.svg-bullet svg {
+  padding-right: 10px;
+}
+
 div.contact-form {
-  background-color: #C2B5AE;
+  background-color: #c2b5ae;
   padding: 20px;
   box-shadow: 0 0 3px;
 }
@@ -162,56 +176,52 @@ div.contact-form textarea {
   resize: vertical;
 }
 
-div.content-tile-container {
+div.side-by-side {
   display: flex;
-  justify-content: space-between;
 }
-div.content-tile-container div.content-tile {
-  color: #F2F4F3;
-  background-color: #5B8266;
-  padding: 10px 20px;
-  border-radius: 20px;
+div.side-by-side > *:not(:last-child) {
+  margin-right: 20px;
 }
 
 a.action-button,
 button.action-button {
-  color: #F2F4F3;
-  background-color: #DDAB2C;
+  color: #f2f4f3;
+  background-color: #ddab2c;
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
-  border: 2px solid #DDAB2C;
+  border: 2px solid #ddab2c;
 }
 a.action-button:focus, a.action-button:hover,
 button.action-button:focus,
 button.action-button:hover {
-  color: #DDAB2C;
-  background-color: #1E212B;
+  color: #ddab2c;
+  background-color: #1e212b;
   cursor: pointer;
 }
 
 button,
 input[type=button],
 input[type=submit] {
-  color: #1E212B;
+  color: #1e212b;
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
-  border: 2px solid #1E212B;
+  border: 2px solid #1e212b;
 }
 button:focus, button:hover,
 input[type=button]:focus,
 input[type=button]:hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
-  color: #F2F4F3;
-  background-color: #5B8266;
+  color: #f2f4f3;
+  background-color: #5b8266;
   cursor: pointer;
 }
 
 input[type=email] {
   padding: 11px;
-  border: 1px solid #5B8266;
+  border: 1px solid #5b8266;
   width: 300px;
 }
 
@@ -226,7 +236,7 @@ div.product-tile:hover {
 }
 div.product-tile a {
   text-decoration: none;
-  color: #1E212B;
+  color: #1e212b;
 }
 div.product-tile img {
   height: 200px;
@@ -242,7 +252,7 @@ div.product-tile button {
 
 div.story-tile {
   display: flex;
-  background-color: #F2F4F3;
+  background-color: #f2f4f3;
   margin: 10px 0;
   box-shadow: 0 0 3px;
 }
@@ -261,7 +271,7 @@ div.story-tile div.text {
   padding: 40px;
 }
 div.story-tile div.text h3 {
-  color: #5B8266;
+  color: #5b8266;
   font-size: 3em;
   margin: 5px;
 }/*# sourceMappingURL=style.css.map */
